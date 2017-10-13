@@ -1,0 +1,5 @@
+name: Entities
+main: com.ulfric.plugin.entities.EntitiesPlugin
+version: 1.0.0
+author: Ulfric LLC
+depend: [Platform, Data]
