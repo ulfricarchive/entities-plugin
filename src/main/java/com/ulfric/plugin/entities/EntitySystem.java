@@ -6,8 +6,8 @@ import java.util.concurrent.CompletableFuture;
 
 import com.ulfric.dragoon.rethink.Instance;
 import com.ulfric.dragoon.rethink.Location;
-import com.ulfric.dragoon.rethink.Response;
 import com.ulfric.dragoon.rethink.RuntimeStore;
+import com.ulfric.dragoon.rethink.response.Response;
 
 public abstract class EntitySystem extends RuntimeStore<Entity> {
 
