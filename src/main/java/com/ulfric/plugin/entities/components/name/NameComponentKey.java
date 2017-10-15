@@ -3,7 +3,7 @@ package com.ulfric.plugin.entities.components.name;
 import com.ulfric.commons.naming.Name;
 import com.ulfric.plugin.entities.components.ComponentKey;
 
-@Name("name")
+@Name("generic/name")
 enum NameComponentKey implements ComponentKey<NameComponent> {
 
 	INSTANCE;
