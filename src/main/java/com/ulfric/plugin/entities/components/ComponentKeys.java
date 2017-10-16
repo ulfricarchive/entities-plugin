@@ -12,6 +12,7 @@ public class ComponentKeys {
 	private static final Map<Class<?>, ComponentKey<?>> KEYS_BY_TYPE = new IdentityHashMap<>();
 
 	static {
+		register(TransientComponentKey.INSTANCE);
 		register(NameComponent.KEY);
 	}
 

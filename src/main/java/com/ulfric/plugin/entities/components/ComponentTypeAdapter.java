@@ -46,6 +46,10 @@ public class ComponentTypeAdapter extends DynamicTypeAdapter {
 			component.setType(ComponentKeys.getByRepresentedType(component.getClass()));
 		}
 
+		if (component.getType() == TransientComponentKey.INSTANCE) {
+			return;
+		}
+
 		genericAdapter(value).write(out, value);
 	}
 
