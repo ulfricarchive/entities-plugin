@@ -13,9 +13,4 @@ enum NameComponentKey implements ComponentKey<NameComponent> {
 		return NameComponent.class;
 	}
 
-	@Override
-	public String toString() {
-		return getName();
-	}
-
 }
