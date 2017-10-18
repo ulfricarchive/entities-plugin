@@ -27,6 +27,10 @@ public class Entity extends Document { // TODO thread safety?
 		return components == null ? null : key.getComponentType().cast(components.get(key));
 	}
 
+	public boolean hasComponent(ComponentKey<?> key) {
+		return getComponent(key) != null;
+	}
+
 	public void addComponent(Component component) {
 		Objects.requireNonNull(component, "component");
 
