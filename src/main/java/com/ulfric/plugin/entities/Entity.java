@@ -41,4 +41,9 @@ public class Entity extends Document { // TODO thread safety?
 		components.put(ComponentKeys.getByRepresentedType(component.getClass()), component); // TODO validate getByRepresentedType
 	}
 
+	@SuppressWarnings("unchecked")
+	public <T extends Component> T removeComponent(ComponentKey<T> key) {
+		return (T) getComponents().remove(key);
+	}
+
 }
