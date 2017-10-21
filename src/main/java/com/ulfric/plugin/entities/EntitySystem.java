@@ -26,6 +26,10 @@ public abstract class EntitySystem extends RuntimeStore<Entity> {
 		return store().insert(entity);
 	}
 
+	public CompletableFuture<Response> delete(Entity entity) {
+		return store().delete(entity);
+	}
+
 	public CompletableFuture<List<Instance<Entity>>> getAllEntities() {
 		return store().listAllFromDatabase();
 	}
