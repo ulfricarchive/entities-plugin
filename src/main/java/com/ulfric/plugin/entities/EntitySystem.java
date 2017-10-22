@@ -19,7 +19,7 @@ public abstract class EntitySystem extends RuntimeStore<Entity> {
 	public Instance<Entity> getCachedEntity(Object key) {
 		Location location = Location.key(key);
 
-		return store().getFromCache(location);
+		return store().getFromLocalCache(location);
 	}
 
 	public CompletableFuture<Response> persist(Entity entity) {
